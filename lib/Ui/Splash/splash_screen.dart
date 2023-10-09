@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:todo_app/Ui/home_page.dart';
+import 'package:todo_app/Ui/Login/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -14,8 +14,8 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, HomePage.routName);
+    Timer(const Duration(seconds: 3), () {
+      Navigator.pushReplacementNamed(context, LoginScreen.routName);
     });
     super.initState();
   }
